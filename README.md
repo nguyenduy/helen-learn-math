@@ -1,4 +1,8 @@
-<<<<<<< HEAD
+# helen-learn-math
+React site to teach my niece math
+
+## From REACT README
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,9 +70,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-||||||| merged common ancestors
-=======
-# helen-learn-math
-React site to teach my niece math
->>>>>>> d393a27f9be5416f6e84b723be0bee04eecd43ec
+
