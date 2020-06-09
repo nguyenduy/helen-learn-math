@@ -1,0 +1,25 @@
+.sidebar {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    color: brown;
+    display: inline-block;
+}
+
+.sidebar-header {
+    font-size: 40px;
+    font-weight: bold;
+    color: darkmagenta;
+    text-align: center;
+    border-radius: 30px;
+    background-color: darkturquoise;
+    font-family: 'Gloria Hallelujah', cursive;;
+}
+
+Button {
+    font-family: 'Architects Daughter', cursive;
+}
+
+hr {
+    margin: 5px;
+}

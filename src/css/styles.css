@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+.container {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header {
+    background-color: lightpink;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    height: 100px;
+    width: 100%;
+    display: table;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.header span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
