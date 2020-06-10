@@ -1,6 +1,6 @@
 import React from 'react'
 import "../css/mainContentContainer.css"
-import { Button } from 'reactstrap'
+import { Button, Alert } from 'reactstrap'
 
 class MainContentContainer extends React.Component {
     constructor(props) {
@@ -11,6 +11,9 @@ class MainContentContainer extends React.Component {
             totalCounter: 1,
             correctCounter: 0,
             userInput: "",
+            alertType: "",
+            alertVisible: false,
+            alertText: ""
         }
     }
 
@@ -38,8 +41,6 @@ class MainContentContainer extends React.Component {
         const newState = {
             num1: num1,
             num2: num2,
-            totalCounter: 1,
-            correctCounter: 0,
             userInput: "",
         }
         return newState
@@ -70,22 +71,37 @@ class MainContentContainer extends React.Component {
         const userInput = parseInt(this.state.userInput)
         const result = this.state.num1 + this.state.num2
         const inputText = document.getElementById("userInput")
+        //correct
         if (userInput === result) {
-            alert("correct")
             this.setState((preState) => this.getNewNumbers(this.props))
             this.setState((prevState) => {return {
                 correctCounter: prevState.correctCounter + 1 ,
                 totalCounter: prevState.totalCounter + 1,
-                userInput: ""
+                userInput: "",
+                alertType: "success",
+                alertVisible: true,
+                alertText: "Correct!"
             }})
             
-        } else {
-            alert("Sorry, it's not correct! Please try again!")
+        } else { //wrong
+            this.setState((prevState) => {return {
+                alertType: "danger",
+                alertVisible: true,
+                alertText: "Wrong! Please try again!"
+            }})
             inputText.select()        
-
         }
+        this.showAlert()
         inputText.focus() 
     }
+
+    showAlert = ()=>{
+        this.setState({alertVisible:true},()=>{
+          window.setTimeout(()=>{
+            this.setState({alertVisible:false})
+          },1000)
+        });
+      }
 
     render() {
         return (
@@ -110,6 +126,9 @@ class MainContentContainer extends React.Component {
                             <div className="correct-answer-counter">
                                 Correct answers: {this.state.correctCounter}
                             </div>
+                            <Alert color={this.state.alertType} isOpen={this.state.alertVisible}>
+                                    {this.state.alertText}
+                            </Alert>
                         </div>
                     }
                 </div>
