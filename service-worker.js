@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/helen-learns-math/precache-manifest.4c3c61b1f201ee41efc7c855e712a19f.js"
+  "/helen-learns-math/precache-manifest.e7ce71bc9772a3508a823a47680019be.js"
 );
 
 self.addEventListener('message', (event) => {
