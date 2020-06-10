@@ -1,10 +1,10 @@
 import React from 'react'
-import Container from './components/Container'
+import MasterContainer from './components/MasterContainer'
 
 class App extends React.Component {
     render() {
         return (
-            <Container />
+            <MasterContainer />
         )
     }
 }

@@ -1,10 +1,10 @@
 import React from 'react'
-import '../css/styles.css'
+import '../css/masterContainer.css'
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className= 'header'>
-            <span>HELEN LEARNS MATH</span>
+            <span>{props.text}</span>
         </div>
     )
 }
