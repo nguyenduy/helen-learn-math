@@ -104,7 +104,7 @@ class MainContentContainer extends React.Component {
                             <div className="question">
                                 <div>Question {this.state.totalCounter}:</div>
                                 <span>{this.state.num1} + {this.state.num2} = </span>
-                                <input id="userInput" onKeyPress={this.enterPressed.bind(this)} border="0" autoFocus type="text" value={this.state.userInput} onChange={this.inputOnChangeHandler.bind(this)}/>
+                                <input id="userInput" onKeyPress={this.enterPressed.bind(this)} border="0" autoFocus type="number" value={this.state.userInput} onChange={this.inputOnChangeHandler.bind(this)}/>
                                 <Button id="checkBtn" color="primary" size="lg" onClick={this.checkBtnOnClickHandler.bind(this)} >Check</Button>
                             </div>
                             <div className="correct-answer-counter">
