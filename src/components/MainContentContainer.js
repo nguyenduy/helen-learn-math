@@ -71,13 +71,16 @@ class MainContentContainer extends React.Component {
         const userInput = parseInt(this.state.userInput)
         const result = this.state.num1 + this.state.num2
         const inputText = document.getElementById("userInput")
+        this.setState((preState) => this.getNewNumbers(this.props))
+        this.setState((prevState) => {return {
+            totalCounter: prevState.totalCounter + 1,
+            userInput: "",
+            
+        }})
         //correct
         if (userInput === result) {
-            this.setState((preState) => this.getNewNumbers(this.props))
             this.setState((prevState) => {return {
-                correctCounter: prevState.correctCounter + 1 ,
-                totalCounter: prevState.totalCounter + 1,
-                userInput: "",
+                correctCounter: prevState.correctCounter + 1,
                 alertType: "success",
                 alertVisible: true,
                 alertText: "Correct!"
