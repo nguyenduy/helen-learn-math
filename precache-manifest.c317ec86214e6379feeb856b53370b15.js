@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd00dedfa20794ab93e124a818d5167a",
+    "revision": "a4f079cd275af9625f2337a3c236a138",
     "url": "/helen-learns-math/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/helen-learns-math/static/css/2.4819d237.chunk.css"
   },
   {
-    "revision": "e2e75288df8715ae6e63",
+    "revision": "d8078ae2e7b2f231e109",
     "url": "/helen-learns-math/static/css/main.0bfb6109.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/helen-learns-math/static/js/2.1b0ff34c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e2e75288df8715ae6e63",
-    "url": "/helen-learns-math/static/js/main.0be37e7d.chunk.js"
+    "revision": "d8078ae2e7b2f231e109",
+    "url": "/helen-learns-math/static/js/main.5e894b12.chunk.js"
   },
   {
     "revision": "72525552d3d3732d648c",
