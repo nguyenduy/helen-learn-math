@@ -23,18 +23,7 @@ class MainContentContainer extends React.Component {
         })
     }
 
-    getNewNumbers(props) {
-        const range = parseInt(props.range.slice(-2))
-        const num1 = Math.floor(Math.random() * range)
-        const num2 = Math.floor(Math.random() * (range-num1))
-        const newState = {
-            num1: num1,
-            num2: num2,
-        }
-        return newState
-    }   
-
-    getNewState(props) {
+    getNewQuestion(props) {
         const range = parseInt(props.range.slice(-3).trim())
         const num1 = Math.floor(Math.random() * range)
         const num2 = Math.floor(Math.random() * (range-num1))
@@ -48,7 +37,7 @@ class MainContentContainer extends React.Component {
 
     getSnapshotBeforeUpdate(prevProps, prevState) {
         if (this.props.range !== prevProps.range) {
-            const newState = this.getNewState(this.props)
+            const newState = this.getNewQuestion(this.props)
             return newState
         }
         return null
@@ -71,7 +60,7 @@ class MainContentContainer extends React.Component {
         const userInput = parseInt(this.state.userInput)
         const result = this.state.num1 + this.state.num2
         const inputText = document.getElementById("userInput")
-        this.setState((preState) => this.getNewNumbers(this.props))
+        this.setState((preState) => this.getNewQuestion(this.props))
         this.setState((prevState) => {return {
             totalCounter: prevState.totalCounter + 1,
             userInput: "",
@@ -90,7 +79,7 @@ class MainContentContainer extends React.Component {
             this.setState((prevState) => {return {
                 alertType: "danger",
                 alertVisible: true,
-                alertText: "Wrong! Please try again!"
+                alertText: "Wrong!"
             }})
             inputText.select()        
         }
