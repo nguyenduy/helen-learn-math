@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/helen-learn-math/static/css/main.0bfb6109.chunk.css",
+    "main.js": "/helen-learn-math/static/js/main.0be37e7d.chunk.js",
+    "main.js.map": "/helen-learn-math/static/js/main.0be37e7d.chunk.js.map",
+    "runtime-main.js": "/helen-learn-math/static/js/runtime-main.f4430506.js",
+    "runtime-main.js.map": "/helen-learn-math/static/js/runtime-main.f4430506.js.map",
+    "static/css/2.4819d237.chunk.css": "/helen-learn-math/static/css/2.4819d237.chunk.css",
+    "static/js/2.1b0ff34c.chunk.js": "/helen-learn-math/static/js/2.1b0ff34c.chunk.js",
+    "static/js/2.1b0ff34c.chunk.js.map": "/helen-learn-math/static/js/2.1b0ff34c.chunk.js.map",
+    "index.html": "/helen-learn-math/index.html",
+    "precache-manifest.1239a7ce84ecb5f853897b92000ae12d.js": "/helen-learn-math/precache-manifest.1239a7ce84ecb5f853897b92000ae12d.js",
+    "service-worker.js": "/helen-learn-math/service-worker.js",
+    "static/css/2.4819d237.chunk.css.map": "/helen-learn-math/static/css/2.4819d237.chunk.css.map",
+    "static/css/main.0bfb6109.chunk.css.map": "/helen-learn-math/static/css/main.0bfb6109.chunk.css.map",
+    "static/js/2.1b0ff34c.chunk.js.LICENSE.txt": "/helen-learn-math/static/js/2.1b0ff34c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f4430506.js",
+    "static/css/2.4819d237.chunk.css",
+    "static/js/2.1b0ff34c.chunk.js",
+    "static/css/main.0bfb6109.chunk.css",
+    "static/js/main.0be37e7d.chunk.js"
+  ]
+}
