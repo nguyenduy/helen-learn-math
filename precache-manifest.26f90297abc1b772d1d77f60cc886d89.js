@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "561665cba379ec76d764977ff190009d",
+    "revision": "12ce15dcdee0e3b95e7e47238bff0d8d",
     "url": "/helen-learns-math/index.html"
   },
   {
